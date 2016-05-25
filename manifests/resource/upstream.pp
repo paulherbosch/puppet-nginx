@@ -98,7 +98,7 @@ define nginx::resource::upstream (
     }
   } else {
     # Collect exported members:
-    ::Nginx::Resource::Upstream::Member <<| upstream == $name |>>
+    #::Nginx::Resource::Upstream::Member <<| upstream == $name |>>
   }
 
   concat::fragment { "${name}_upstream_footer":
